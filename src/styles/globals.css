@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base tweaks for the look in your screenshot */
+html, body, #root { height: 100%; }
+body { @apply bg-gradient-to-br from-blue-50 to-white font-sans; }
+
+/* Card polish */
+.card {
+  @apply bg-white rounded-lg shadow border border-gray-200;
+}
+
+/* Nice scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background-color: #93c5fd; border-radius: 9999px; }
